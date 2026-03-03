@@ -1,4 +1,4 @@
-name: Deploy to EKS
+name: Deploy
 
 on:
   push:
@@ -27,7 +27,7 @@ jobs:
 
     - name: Build Docker Image
       run: |
-        docker build -t Node_app:v1 ../../ -f dockerfile
+        sudo docker build -t Node_app:v1 ../../ -f dockerfile
   #      docker tag devops-app:latest $ECR_REPOSITORY:latest
   #      docker push $ECR_REPOSITORY:latest
 
