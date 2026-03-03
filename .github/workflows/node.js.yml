@@ -27,7 +27,7 @@ jobs:
 
     - name: Build Docker Image
       run: |
-        sudo docker build -t node_app:v1 ../../ -f Dockerfile
+        sudo docker build -t node_app:v1 -f ../../Dockerfile
   #      docker tag devops-app:latest $ECR_REPOSITORY:latest
   #      docker push $ECR_REPOSITORY:latest
 
